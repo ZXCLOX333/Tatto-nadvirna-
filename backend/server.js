@@ -1,7 +1,7 @@
 // Головний файл сервера для запуску на Render
 // Main server file for running on Render
 
-import { createServer } from './server/index.ts';
+import { createServer } from './dist/server/index.js';
 import dotenv from 'dotenv';
 
 // Завантажуємо змінні середовища

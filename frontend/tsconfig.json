@@ -23,13 +23,12 @@
     /* Path mapping */
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./client/*"],
-      "@shared/*": ["./shared/*"]
+      "@/*": ["./*"],
+      "@shared/*": ["../shared/*"]
     }
   },
   "include": [
-    "client/**/*",
-    "shared/**/*"
+    "**/*"
   ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

@@ -24,7 +24,11 @@ export function createServer() {
 
   // Middleware
   app.use(cors({ 
-    origin: ["http://localhost:8080", "http://localhost:8081"],
+    origin: [
+      "http://localhost:8080", 
+      "http://localhost:8081",
+      process.env.FRONTEND_URL || "https://your-frontend.netlify.app"
+    ],
     credentials: true
   }));
   app.use(bodyParser.json({ limit: "10mb" }));
