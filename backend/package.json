@@ -2,10 +2,10 @@
   "name": "fusion-backend",
   "version": "1.0.0",
   "description": "Express backend server for Fusion application",
-  "main": "dist/server/server.js",
+  "main": "dist/server/index.js",
   "type": "module",
   "scripts": {
-    "start": "node dist/server/server.js",
+    "start": "node dist/server/index.js",
     "dev": "tsx server/index.ts",
     "build": "tsc",
     "typecheck": "tsc --noEmit"
