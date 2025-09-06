@@ -1,0 +1,20 @@
+# Render deployment configuration
+# Конфігурація розгортання на Render
+
+services:
+  - type: web
+    name: fusion-backend
+    env: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false
+      - key: TELEGRAM_CHAT_ID
+        sync: false
+      - key: FRONTEND_URL
+        sync: false
+
