@@ -1,5 +1,5 @@
-import bookingRouter from "./routes/booking";
-import { sendContact } from "./routes/contact";
+import bookingRouter from "./routes/booking.js";
+import { sendContact } from "./routes/contact.js";
 import "dotenv/config";
 import { config } from "dotenv";
 import path from "path";
@@ -12,9 +12,9 @@ config({ path: path.join(__dirname, "..", ".env") });
 import express from "express";
 import bodyParser from "body-parser";
 import cors from "cors";
-import { handleDemo } from "./routes/demo";
-import { getReviews, addReview, clearReviews } from "./routes/reviews";
-import telegramRouter from "./routes/telegram";
+import { handleDemo } from "./routes/demo.js";
+import { getReviews, addReview, clearReviews } from "./routes/reviews.js";
+import telegramRouter from "./routes/telegram.js";
 export function createServer() {
     const app = express();
     // Middleware
