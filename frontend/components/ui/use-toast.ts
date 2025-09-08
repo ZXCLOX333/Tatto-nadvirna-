@@ -1,5 +1,3 @@
-export function useToast() {
-  return { toasts: [] as any[] };
-}
+import { useToast, toast } from "@/hooks/use-toast";
 
-export const toast = (_t: any) => {};
+export { useToast, toast };
