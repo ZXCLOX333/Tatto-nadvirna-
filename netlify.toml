@@ -1,9 +1,0 @@
-[build]
-  # Serve the prebuilt studio site committed in the repo
-  command = ""
-  publish = "frontend/dist"
-
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
